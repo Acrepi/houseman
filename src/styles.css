@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --min-height: 300px;
+  --main-blue: #3a3a8a;
+  --secondary-blue: #5b5bb4;
+}
+
+body {
+  background: url("https://placehold.co/100x100/FFFFFF/EFEFEF/png?text=49386");
+  font-family: Arial, serif;
+}
+
+header{
+  width: calc(100% - 40px);
+  padding: 30px 20px;
+  background-color: var(--main-blue);
+  color: white;
+}
+
+h1{
+  margin: 0;
+}
+
+nav{
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  background-color: var(--secondary-blue);
+  color: white;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a:active {
+  color: #d30000;
+}
+
+nav .divider {
+  margin: 0 20px 0 0;
+}
+
+footer{
+  width: calc(100% - 40px);
+  padding: 20px;
+  background-color: var(--secondary-blue);
+  color: white;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.holder {
+  padding: 20px;
+  min-height: var(--min-height);
+}
+
+.center-holder {
+  margin: 20px 0;
+  width: 100%;
+  min-height: var(--min-height);
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
+
+table, th, td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td{
+  padding: 5px 10px;
+}
+
+th {
+  background-color: var(--secondary-blue);
+  color: white;
+}

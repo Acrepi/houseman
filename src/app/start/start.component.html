@@ -1,0 +1,15 @@
+<div class="holder">
+  <span *ngIf="!isAuthenticated()">You are <b>not logged</b> in (you cannot see the <b>Items</b> nor the <b>Users</b> tab).</span>
+  <span *ngIf="isAuthenticated() && !isAdmin()">You are logged in as a <b>normal user</b> (you can see the <b>Items</b> but not the <b>Users</b> tab).</span>
+  <span *ngIf="isAdmin()">You are logged in as an <b>admin</b> (you can see both the <b>Items</b> and the <b>Users</b> tab).</span>
+  <hr>
+  <div>
+    <h2>Log in</h2>
+    <form (submit)="loginSubmit()">
+      <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="username"><br>
+      <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password"><br>
+      <button type="submit">LOGIN</button>
+    </form>
+    <span class="error">{{errorMessage}}</span>
+  </div>
+</div>

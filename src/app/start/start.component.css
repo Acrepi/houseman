@@ -1,0 +1,19 @@
+input {
+  width: 200px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+button {
+  width: 208px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0 15px 0;
+}
+
+.error {
+  color: red;
+}

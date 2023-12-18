@@ -1,0 +1,13 @@
+<div class="holder">
+  <h2>Users</h2>
+  <table>
+    <tr>
+      <th>User name</th>
+      <th>Ranks</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.username}}</td>
+      <td><span *ngIf="user.roles.includes('USER')" class="user">USER</span>&nbsp;<span *ngIf="user.roles.includes('ADMIN')" class="admin">ADMIN</span></td>
+    </tr>
+  </table>
+</div>

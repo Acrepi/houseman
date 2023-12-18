@@ -1,0 +1,13 @@
+span {
+  font-size: 30px;
+}
+
+.number {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.center-holder {
+  min-height: calc(var(--min-height) - 30px);
+  padding-top: 30px;
+}

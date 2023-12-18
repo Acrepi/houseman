@@ -1,0 +1,15 @@
+td:nth-of-type(2) {
+  text-align: center;
+}
+
+.user {
+  border: 2px solid var(--secondary-blue);
+  padding: 2px 4px;
+  border-radius: 20px;
+}
+
+.admin {
+  border: 2px solid red;
+  padding: 2px 4px;
+  border-radius: 20px;
+}
